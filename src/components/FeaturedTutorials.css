@@ -1,0 +1,28 @@
+.featured-section {
+    margin: 20px;
+  }
+  
+  .tutorial-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tutorial-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 22%;
+    text-align: center;
+  }
+  
+  .tutorial-card img {
+    width: 100%;      /* Set to fill the parent container */
+    height: 200px;    /* Fixed height to ensure consistency */
+    object-fit: cover;  /* Ensures images maintain aspect ratio while filling the container */
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    margin-top: 20px;
+  }
+  

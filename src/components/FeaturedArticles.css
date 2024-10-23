@@ -1,0 +1,73 @@
+/* Container Styling for Articles and Tutorials */
+.article-container, .tutorial-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  max-width: 1200px;  /* Maximum width for the container */
+}
+
+/* Card Styling for Articles and Tutorials */
+.article-card, .tutorial-card {
+  width: 300px;               /* Set equal width for both article and tutorial cards */
+  margin: 15px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;          /* Rounded corners for cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add shadow for depth */
+  text-align: center;
+}
+
+/* Image Styling for Articles and Tutorials */
+.article-image, .tutorial-image {
+  width: 100%;                /* Image takes full width of the card */
+  height: 200px;              /* Fixed height for consistent display */
+  object-fit: cover;          /* Ensures images are proportionally resized */
+  border-radius: 8px;         /* Rounded corners for images */
+}
+
+/* Title Styling for Articles and Tutorials */
+.article-card h3, .tutorial-card h3 {
+  font-size: 1.2rem;
+  margin: 15px 0 10px;
+  color: #333;
+}
+
+/* Author Name and Rating Styling */
+.article-card p, .tutorial-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Star Rating Styling */
+.rating {
+  color: gold;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.star-icon {
+  color: #ffb400;             /* Gold color for stars */
+}
+
+.view-all-btn {
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #0099cc;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .article-card, .tutorial-card {
+    width: 100%;    /* Make cards full-width on small screens */
+  }
+}
